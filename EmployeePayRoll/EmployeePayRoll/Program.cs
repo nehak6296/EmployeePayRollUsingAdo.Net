@@ -12,7 +12,9 @@ namespace EmployeePayRoll
         {
             EmployeeModel employeeModel = new EmployeeModel();
             EmployeeRepo employeeRepo = new EmployeeRepo();
-            employeeRepo.CheckConnection();
+            //employeeRepo.CheckConnection();
+            employeeRepo.GetAllEmployee();
+            Console.ReadKey();
         }
     }
 }
