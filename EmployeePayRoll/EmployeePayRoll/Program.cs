@@ -10,7 +10,9 @@ namespace EmployeePayRoll
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Employee payroll service..");
+            EmployeeModel employeeModel = new EmployeeModel();
+            EmployeeRepo employeeRepo = new EmployeeRepo();
+            employeeRepo.CheckConnection();
         }
     }
 }
